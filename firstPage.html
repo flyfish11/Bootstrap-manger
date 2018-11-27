@@ -1,0 +1,134 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="static/css/common/content.css">
+	<style>
+		#time{
+			font-size:30px;
+			font-family: "Microsoft YaHei";
+			color:#00abff;
+		}
+		.year-month{
+			padding:10px;
+    background-color: #ff9600;
+    height: 70px;
+    color: #fff;
+		}
+		.year-month p{
+			margin-bottom: 0;
+		}
+		p span{
+		font-size:24px;
+		}
+		strong{
+			font-size:54px;
+			
+		}
+		.col-md-6{
+			float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #c9d3db;
+    width: 49%;
+    margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="row">
+	<div class="panel-body pull-right">
+	<div class="year-month pull-left">
+<p><b id="week"></b></p>
+<p id="today"></p>
+	</div>
+	<div class="hour-minute pull-right"><strong id="hms"></strong></div>
+		<!-- <div id="time" class="text-center"></div> -->
+	</div>
+</div>
+<div class="row">
+<div class="col-md-4">dsadasdd</div>
+</div>
+	<div class="row" id="weidu">
+	<div class="col-md-6" id="gg">
+ <h2 class="sub-header">公告</h2>
+ <div class="listview">
+  <div class="media">
+<div class="pull-left">
+ <img width="40" src="img/profile-pics/1.png" alt="">
+</div>
+<div class="media-body">
+<small class="text-muted">2小时前 来自 供暖调度班</small><br>
+<a class="t-overflow" href="">供暖系统故障已排除</a>
+</div>
+</div>
+
+
+<div class="media">
+<div class="pull-left">
+ <img width="40" src="img/profile-pics/1.png" alt="">
+</div>
+<div class="media-body">
+<small class="text-muted">2小时前 来自 供暖调度班</small><br>
+<a class="t-overflow" href="">供暖系统故障已排除</a>
+</div>
+</div>
+<div class="media text-center"><small><a href="">查看所有</a></small></div>
+</div>
+</div>
+
+
+
+<div class="col-md-6" id="weidu">
+ <h2 class="sub-header">未读消息</h2>
+ <div class="listview">
+  <div class="media">
+<div class="pull-left">
+ <img width="40" src="img/profile-pics/1.png" alt="">
+</div>
+<div class="media-body">
+<small class="text-muted">2小时前 来自 供暖调度班</small><br>
+<a class="t-overflow" href="">供暖系统故障已排除</a>
+</div>
+</div>
+
+
+<div class="media">
+<div class="pull-left">
+ <img width="40" src="img/profile-pics/1.png" alt="">
+</div>
+<div class="media-body">
+<small class="text-muted">2小时前 来自 供暖调度班</small><br>
+<a class="t-overflow" href="">供暖系统故障已排除</a>
+</div>
+</div>
+<div class="media text-center"><small><a href="">查看所有</a></small></div>
+</div>
+</div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+	time();
+	function time(){
+		var today=new Date();
+		var month=today.getMonth()+1;
+		var s="当前时间:"+today.getFullYear()+"年"+month+"月"+today.getDate()+"日"+"\t星期"+"日一二三四五六".charAt(today.getDay())+"\t"+today.getHours()+"时"+today.getMinutes()+"分"+today.getSeconds()+"秒";
+		var min=today.getMinutes();
+		if(min>=0&&min<10){
+			min="0"+min;
+		}
+		var day=month+"月"+today.getDate()+"日";
+		var hms=today.getHours()+":"+min;
+		
+		$("#time").text(s);
+		$("#week").text("星期"+"日一二三四五六".charAt(today.getDay()));
+		$("#today").html("<span><b>"+today.getFullYear()+'年'+"</b></span>"+"<b>"+day+"</b>");
+        $("#hms").html(hms);
+	}   
+	setInterval(time,60000);
+</script>
+
+</html>
