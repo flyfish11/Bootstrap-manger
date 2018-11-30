@@ -89,9 +89,20 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a class="top"  href="#" ><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;欢迎你，admin</a></li>
-          <li><a class="top"  href="#" ><i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;我的信息&nbsp;&nbsp;<span class="label label-important">4</span></a></li>
+          <li><a class="top"  href="javascript:void(0)" data-toggle="dropdown"><i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;我的信息&nbsp;<span class="caret"></span>&nbsp;<span class="label label-important">4</span></a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="message.html" target="content" class="glyphicon glyphicon-envelope">&nbsp;收件箱</a>
+    </li>
+    <li role="presentation">
+      <a role="menuitem" tabindex="-1" href="addMessage.html" target="content" class="glyphicon glyphicon glyphicon-plus">&nbsp;新建信息</a>
+    </li>
+    
+  </ul>
+          </li>
+          <li><a class="top" href="updatePwd.html" target="content"><i class="fa fa-key"></i>&nbsp;&nbsp;修改密码&nbsp;&nbsp;</a></li>
           <li><a class="top"  href="login.html" ><i class="glyphicon glyphicon-off"></i>&nbsp;&nbsp;退出系统</a></li>
-           
+
 
         </ul>
 
@@ -105,40 +116,33 @@
          <li class="active">
           <div class="link"><i class="fa fa-home"></i>控制面板</div>
         </li>
-         <li>
-          <div class="link">账号管理<i class="fa fa-chevron-down"></i></div>
-          <ul class="submenu">
-            <li><a href="updatePwd.html" target="content">修改密码</a></li>
-            <li><a href="content1.html" target="content">我的信息</a></li>
-            
-          </ul>
-        </li>
+        
         <li>
           <div class="link">人事管理<i class="fa fa-chevron-down"></i></div>
           <ul class="submenu">
             <li><a href="user.html" target="content">员工管理</a></li>
-            <li><a href="content1.html" target="content">HTML</a></li>
-            <li><a href="index.html" target="content">CSS</a></li>
-            <li><a href="#">Maquetacion web</a></li>
+            <li><a href="transfer.html" target="content">员工调动</a></li>
+            <li><a href="apply.html" target="content">请假申请</a></li>
+            <li><a href="check.html" target="content">请假审核</a></li>
           </ul>
         </li>
         <li>
           <div class="link">部门管理<i class="fa fa-chevron-down"></i></div>
           <ul class="submenu">
-            <li><a href="#">Javascript</a></li>
+            <li><a href="department.html" target="content">部门信息</a></li>
             <li><a href="#">Frameworks javascript</a></li>
           </ul>
         </li>
         <li>
           <div class="link">考勤管理<i class="fa fa-chevron-down"></i></div>
           <ul class="submenu">
-            <li><a href="#">Tablets</a></li>
+            <li><a href="attend.html" target="content">出勤信息</a></li>
             <li><a href="#">Dispositivos mobiles</a></li>
             <li><a href="#">Medios de escritorio</a></li>
             <li><a href="#">Otros dispositivos</a></li>
           </ul>
         </li>
-        <li style="border-bottom: 1px solid #37414b;"><div class="link">基础数据管理<i class="fa fa-chevron-down"></i></div>
+        <li style="border-bottom: 1px solid #37414b;"><div class="link">工资管理<i class="fa fa-chevron-down"></i></div>
           <ul class="submenu">
             <li><a href="#">Google</a></li>
             <li><a href="#">Bing</a></li>
@@ -146,7 +150,7 @@
             <li><a href="#">Otros buscadores</a></li>
           </ul>
         </li>
-        <li><div class="link">工资管理<i class="fa fa-chevron-down"></i></div>
+        <li><div class="link">基础数据管理<i class="fa fa-chevron-down"></i></div>
           <ul class="submenu">
             <li><a href="#">Google</a></li>
             <li><a href="#">Bing</a></li>

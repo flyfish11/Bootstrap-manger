@@ -9,3 +9,13 @@ body {
 	position:fixed;
 	top:50px;
 }
+h1{
+color: #337ab7;
+      font-size: 15px;
+      font-weight: bolder;
+      float: none;
+      text-shadow: 0 1px 0 #fff;
+      position: relative;
+      border-bottom: 1px solid #337ab7;
+      line-height: 40px;
+}
