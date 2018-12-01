@@ -138,3 +138,7 @@ h1 a {
 .add{
 	background: #35b782;
 }
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #000;
+}
