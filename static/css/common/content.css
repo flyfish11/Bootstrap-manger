@@ -34,5 +34,5 @@ h1{
       border:1px solid #337ab7;
 }
 .test ul li a:hover {
-      border:1px solid #0089ff;
+       border:1px solid #337ab7!important;
 }

@@ -88,20 +88,20 @@
 					<tbody id="content">
 						<tr class="email">
 							<td><input type="checkbox" name="us" class="checkbox"></td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>1</td>
-							<td>未读</td>
+							<td class="email_2">1</td>
+							<td class="email_2">1</td>
+							<td class="email_2">1</td>
+							<td class="email_2">1</td>
+							<td class="email_2">未读</td>
 							<td class="hidden">1</td>
 						</tr>
 						<tr class="email">
 							<td><input type="checkbox" name="us" class="checkbox"></td>
-							<td>1</td>
-							<td>1</td>
-							<td><span>qq</span><span class="gt">-laalalalalalal</span></td>
-							<td>1</td>
-							<td>已读</td>
+							<td class="email_2">1</td>
+							<td class="email_2">1</td>
+							<td class="email_2"><span>qq</span><span class="gt">-laalalalalalal</span></td>
+							<td class="email_2">1</td>
+							<td class="email_2">已读</td>
 							<td class="hidden">33</td>
 						</tr>
 					</tbody>
@@ -161,7 +161,7 @@
 			});
 			})
 		});
-		$("#table .email").click(function(){
+		$("#table .email .email_2").click(function(){
 			console.log("该行隐藏数："+$(this).children().last().html());
 			window.location.href="showMessage.html";
 		})
